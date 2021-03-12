@@ -30,5 +30,6 @@ Pod::Spec.new do |spec|
   spec.libraries = 'z', 'c++', 'sqlite3.0'
   spec.vendored_frameworks = "AlipaySDK_NoUTDID_Swift/Classes/AlipaySDK.framework"
   spec.resource = ['AlipaySDK_NoUTDID_Swift/Classes/AlipaySDK.bundle']
+  spec.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
 
 end
