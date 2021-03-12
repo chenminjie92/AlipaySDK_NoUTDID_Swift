@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'AlipaySDK_NoUTDID_Swift_Example' do
+  pod 'AlipaySDK_NoUTDID_Swift', :path => '../'
+
+  target 'AlipaySDK_NoUTDID_Swift_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
